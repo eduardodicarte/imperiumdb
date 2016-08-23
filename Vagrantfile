@@ -12,7 +12,7 @@ Vagrant.configure(VAGRANT_FILE_VERSION) do |config|
 
 	impdb_config.librarian_puppet.puppetfile_dir       = "puppet"
 	impdb_config.librarian_puppet.placeholder_filename = ".gitkeep"
-        impdb_config.librarian_puppet.resolve_options      = { :force => true }
+        impdb_config.librarian_puppet.resolve_options  = { :force => true }
 	impdb_config.librarian_puppet.desctructive         = false	
 	
 	impdb_config.ssh.username   = 'root'
@@ -23,7 +23,7 @@ Vagrant.configure(VAGRANT_FILE_VERSION) do |config|
   
   config.vm.provision "puppet" do |puppet|
   	puppet.environment_path = "environments"
-  	puppet.environment 	= "development"
+  	puppet.environment 	    = "development"
 	puppet.module_path      = "puppet/modules"
   	
   	puppet.facter = {
