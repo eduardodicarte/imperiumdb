@@ -1,0 +1,7 @@
+#Manage Puppet Module dependencies with librarian-puppet
+
+forge 'http://forge.puppetlabs.com'
+
+mod 'dc_impdb',
+	:git => 'git://github.com/eduardodicarte/dc_impdb.git'
+
