@@ -1,6 +1,7 @@
 .project
 .
 .*
+*.lock
 !.gitignore
 puppet/modules/*
 !puppet/modules/.gitkeep
