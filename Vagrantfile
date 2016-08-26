@@ -30,6 +30,7 @@ Vagrant.configure(VAGRANT_FILE_VERSION) do |config|
 		"db_name"  => "impdb",
 		"db_user"  => "imprt",
 		"db_pass"  => "AvdWe&sd#",
+		"tbl_name" => "dict",
 		"sch_name" => "el"
 	}
   end
