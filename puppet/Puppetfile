@@ -3,7 +3,7 @@
 forge 'http://forge.puppetlabs.com'
 
 mod 'dc_impfw',
-	:git => 'git://github.com/eduardodicarte/dc_impdw.git'
+	:git => 'git://github.com/eduardodicarte/dc_impdfw.git'
 
 mod 'dc_impdb',
 	:git => 'git://github.com/eduardodicarte/dc_impdb.git'
