@@ -5,7 +5,7 @@ VAGRANT_FILE_VERSION = 2
 
 Vagrant.configure(VAGRANT_FILE_VERSION) do |config|
  
-  config.vm.box = "puppetlabs/centos-7.0-64-puppet"
+  config.vm.box = "ebrc/centos-7-64-puppet"
   
   config.vm.define :impdb do |impdb_config|
 	impdb_config.vm.network :private_network, :ip => "192.168.43.10" 
@@ -15,8 +15,8 @@ Vagrant.configure(VAGRANT_FILE_VERSION) do |config|
 	impdb_config.librarian_puppet.resolve_options      = { :force => true }
 	impdb_config.librarian_puppet.desctructive         = false	
 	
-	impdb_config.ssh.username   = 'root'
-	impdb_config.ssh.password   = 'puppet'
+	impdb_config.ssh.username   = 'vagrant'
+	impdb_config.ssh.password   = 'vagrant'
 	impdb_config.ssh.insert_key = 'true'
 	
   end
